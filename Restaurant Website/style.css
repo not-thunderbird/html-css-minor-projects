@@ -1,0 +1,206 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html, body{
+        line-height: 1.4;
+        font-weight: 350;
+        font-family: "Roboto", sans-serif;
+    }
+    nav{
+        padding: 10px;
+        margin: 0 auto;
+        position: sticky;
+        top: 0;
+        margin-bottom: 10px;
+        background-color: white;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0,0.5);
+        z-index:50;
+
+    }
+    button{
+        box-shadow: 3px 3px 3px rgba(0, 0,0,0.5);
+        padding:8px 15px;
+        border: none;
+        transition: 15ms ease-in-out;
+    
+
+    }
+    button:hover{
+        opacity: 0.8;
+        transition: 15ms ease-in-out;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .bar_icon{
+        font-size: 28px;
+    }
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+        margin-top: 60px;
+    }
+    .hero_content{
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+    }
+    .tag{
+        background-color: green;
+        align-self: flex-start;
+        color: white;
+        padding: 11px ;
+    }
+    .hero_content h1{
+        font-weight: 400;
+        font-size: 64px;
+    }
+    .explore_btn{
+        margin-top: 15px;
+        background-color: rgb(116, 165, 51);
+        align-self: flex-start;
+        color: white;
+    }
+    @media (max-width: 780px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero_img{
+        display: flex;
+        justify-content: center;
+    }
+    .hero_img img{
+        width: 80%;
+    }
+    .hero_content{
+        gap: 10px;
+        padding: 10px;
+    }
+    .footer_container{
+        flex-direction: column;
+    }
+    .feature{
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+    .features{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 49px;
+    }
+    .feature{
+        display: flex;
+        gap: 35px;
+        align-items: flex-start;
+        padding: 43px 8px;
+        margin-left: 5px;
+        /* flex-direction: column; */
+    }
+    .feature:hover{
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+    .feature img{
+        max-width: 50px;
+        max-height: 50px;
+        
+    }
+    .divider{
+        border: 2px solid grey;
+        margin: 14px 0;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 50px 0;
+        align-items: center;
+    }
+    .menu .tag{
+        align-self: center;
+    }
+    .grid{
+        display: grid;
+        gap: 10px;
+        grid-template-areas:" I1 I1 I2 I3"
+        "I4 I5 I6 I7" ;
+
+    }
+    .grid img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: 80ms ease-in;
+        border: 2px solid gray;
+    }
+    .grid img:hover{
+    transform: scale(1.05);
+    transition: 100ms ease-in;
+    }
+
+    .item1{
+        grid-area: I1;
+    }
+    .item2{
+        grid-area: I2;
+    }
+    .item3{
+        grid-area: I3;
+    }
+    .item4{
+        grid-area: I4;
+    }
+    .item5{
+        grid-area: I5;
+    }
+    .item6{
+        grid-area: I6;
+    }
+    .item7{
+        grid-area: I7;
+    }
+footer{
+    background-color: rgb(204, 195, 182);
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.footer_container h3{
+    color: grey;
+    margin-bottom: 8px;
+    /* margin-top: 26px; */
+    font-size: 24px;
+}
+.link ul{
+    list-style: none;
+}
+
+.support ul{
+    list-style-type: none;
+}
+.news_letter input{
+    padding: 4px 8px;
+    margin-bottom: 8px;
+}
+.icon_container{
+    display: flex;
+    gap:22px;
+    font-size: 22px;
+}
+.icon_container i:hover{
+    cursor: pointer;
+    color:rgb(89, 89, 190);
+}
